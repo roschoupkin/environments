@@ -1,0 +1,17 @@
+{
+  "name": "@environments/prettier-config",
+  "version": "1.0.0",
+  "description": "Config for prettier",
+  "main": "index.js",
+  "scripts": {
+    "ping": "echo \"@environments/prettier-config\""
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "author": "d.roschoupkin",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

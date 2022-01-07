@@ -1,0 +1,21 @@
+{
+  "name": "@environments/commitlint-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Config for commitlint",
+  "main": "index.js",
+  "scripts": {
+    "ping": "echo \"@environments/commitlint-config\""
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "commitlint"
+  ],
+  "author": "d.roschoupkin",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "@commitlint/cli": "^16.0.1"
+  }
+}

@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run --workspaces --if-present test
+npm run format
+npm run lint
+git add .

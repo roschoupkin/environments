@@ -1,0 +1,24 @@
+{
+  "name": "@environments/changelog-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Preset for conventional-changelog package",
+  "main": "index.js",
+  "scripts": {
+    "ping": "echo \"@environments/changelog-config\""
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "conventional-changelog"
+  ],
+  "author": "d.roschoupkin",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.6.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@environments/browserslist-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Config for browserslist",
+  "main": "index.js",
+  "scripts": {
+    "ping": "echo \"@environments/commitlint-config\""
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "commitlint"
+  ],
+  "author": "d.roschoupkin",
+  "license": "UNLICENSED",
+  "files": [
+    "library.js",
+    "index.js",
+    "node.js"
+  ]
+}

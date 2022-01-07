@@ -1,0 +1,41 @@
+{
+  "name": "environments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A project with all possible dependencies for starting a new project or for a user's computer",
+  "scripts": {
+    "test": "npm run --workspaces --if-present test",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "keywords": [
+    "lint",
+    "prettier",
+    "homebrew",
+    "zsh"
+  ],
+  "author": "d.roschoupkin",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-compat": "^4.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1"
+  }
+}
