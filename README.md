@@ -1,7 +1,8 @@
 # Examples of environment configurations
 
 This is a sample project showing how we can set up project rules
-Also work with [npm monorepositories](https://docs.npmjs.com/cli/v7/using-npm/workspaces)
+
+Also works with [npm monorepositories](https://docs.npmjs.com/cli/v7/using-npm/workspaces)
 
 This project uses itself to validate commit messages, code styles, and can format code
 
