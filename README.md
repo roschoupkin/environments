@@ -13,6 +13,7 @@ This project uses itself to validate commit messages, code styles, and can forma
 - [@environments/prettier-config](packages/prettier) – configuration example for [prettier]
 - [@environments/browserlist-config](packages/browserlist) – configuration example for [browserlist]
 - [@environments/changelog-config](packages/changelog) – configuration example for [changelog]
+- [@environments/typescript-config](packages/typescript) – configuration example for [tsconfig]
 
 ### It's still in production, but you can try changing the code or adding a new package to see the configurations in action.
 
@@ -21,3 +22,4 @@ This project uses itself to validate commit messages, code styles, and can forma
 [prettier]: https://prettier.io/
 [browserlist]: https://github.com/browserslist/browserslist
 [changelog]: https://www.conventionalcommits.org/en/v1.0.0/
+[tsconfig]: https://www.typescriptlang.org/tsconfig
