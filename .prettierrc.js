@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require.resolve('@environments/prettier-config');
+module.exports = require.resolve('@roschoupkin/prettier-config');

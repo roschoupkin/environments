@@ -1,4 +1,4 @@
-# @environments/typescript-config
+# @roschoupkin/typescript-config
 
 Configuration example for [tsconfig]. For more information you can read [EXPLANATION.md](EXPLANATION.md).
 
@@ -10,7 +10,7 @@ Below you will see an explanation of usage. **See rule "extends"**
 
 ```json5
 {
-  extends: '@environments/typescript-config/tsconfig.react',
+  extends: '@roschoupkin/typescript-config/tsconfig.react',
   compilerOptions: {
     rootDir: 'src',
     outDir: 'build',
@@ -32,7 +32,7 @@ For CommonJS tsconfig:
 
 ```json5
 {
-  extends: '@environments/typescript-config/tsconfig.lib',
+  extends: '@roschoupkin/typescript-config/tsconfig.lib',
   compilerOptions: {
     rootDir: 'src',
     outDir: 'lib',
@@ -45,7 +45,7 @@ For ESNext tsconfig:
 
 ```json5
 {
-  extends: '@environments/typescript-config/tsconfig.es',
+  extends: '@roschoupkin/typescript-config/tsconfig.es',
   compilerOptions: {
     rootDir: 'src',
     outDir: 'es',
@@ -58,7 +58,7 @@ For ESNext tsconfig:
 
 ```json5
 {
-  extends: '@environments/typescript-config/tsconfig.node',
+  extends: '@roschoupkin/typescript-config/tsconfig.node',
   compilerOptions: {
     rootDir: 'src',
     outDir: 'dist',

@@ -1,1 +1,1 @@
-extends @environments/browserslist-config/node
+extends @roschoupkin/browserslist-config/node

@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: ['@environments/commitlint-config'],
+  extends: ['@roschoupkin/commitlint-config'],
 };

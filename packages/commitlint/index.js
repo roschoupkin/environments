@@ -20,7 +20,7 @@ async function getPackages() {
 }
 
 module.exports = {
-  parserPreset: '@environments/changelog-config',
+  parserPreset: '@roschoupkin/changelog-config',
   rules: {
     'body-leading-blank': [1, 'always'],
     'footer-leading-blank': [1, 'always'],

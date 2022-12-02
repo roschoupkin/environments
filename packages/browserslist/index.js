@@ -1,11 +1,3 @@
 'use strict';
 
-module.exports = [
-  'Chrome >= 61',
-  'ChromeAndroid >= 61',
-  'Firefox >= 60',
-  'Edge >= 79',
-  'Opera >= 48',
-  'Safari >= 11',
-  'iOS >= 11',
-];
+module.exports = ['cover 99.5%'];

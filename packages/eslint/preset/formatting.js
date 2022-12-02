@@ -99,6 +99,7 @@ module.exports = {
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'off',
     'operator-assignment': ['error', 'always'],
+    'logical-assignment-operators': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': 'off',

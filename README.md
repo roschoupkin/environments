@@ -8,18 +8,18 @@ This project uses itself to validate commit messages, code styles, and can forma
 
 ## Project packages
 
-- [@environments/commitlint-config](packages/commitlint) – configuration example for [commitlint]
-- [@environments/eslint-config](packages/eslint) – configuration example for [eslint]
-- [@environments/prettier-config](packages/prettier) – configuration example for [prettier]
-- [@environments/browserlist-config](packages/browserlist) – configuration example for [browserlist]
-- [@environments/changelog-config](packages/changelog) – configuration example for [changelog]
-- [@environments/typescript-config](packages/typescript) – configuration example for [tsconfig]
+- [@roschoupkin/eslint-config](packages/eslint) – configuration example for [eslint]
+- [@roschoupkin/prettier-config](packages/prettier) – configuration example for [prettier]
+- [@roschoupkin/changelog-config](packages/changelog) – configuration example for [changelog]
+- [@roschoupkin/typescript-config](packages/typescript) – configuration example for [tsconfig]
+- [@roschoupkin/commitlint-config](packages/commitlint) – configuration example for [commitlint]
+- [@roschoupkin/browserlist-config](packages/browserlist) – configuration example for [browserlist]
 
-### It's still in production, but you can try changing the code or adding a new package to see the configurations in action.
+### It is WIP, but you can try to change the code or adding a new package to see the configurations in action.
 
-[commitlint]: https://commitlint.js.org/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
+[commitlint]: https://commitlint.js.org/
+[tsconfig]: https://www.typescriptlang.org/tsconfig
 [browserlist]: https://github.com/browserslist/browserslist
 [changelog]: https://www.conventionalcommits.org/en/v1.0.0/
-[tsconfig]: https://www.typescriptlang.org/tsconfig

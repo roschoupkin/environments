@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = ['Node >= 12'];
+module.exports = ['Node >= 16'];

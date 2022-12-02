@@ -1,11 +1,11 @@
 {
-  "name": "@environments/browserslist-config",
+  "name": "@roschoupkin/browserslist-config",
   "version": "1.0.0",
   "private": true,
   "description": "Config for browserslist",
   "main": "index.js",
   "scripts": {
-    "ping": "echo \"@environments/commitlint-config\""
+    "ping": "echo \"@roschoupkin/browserslist-config\""
   },
   "engines": {
     "node": ">=16"

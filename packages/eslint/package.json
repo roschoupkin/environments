@@ -1,5 +1,5 @@
 {
-  "name": "@environments/eslint-config",
+  "name": "@roschoupkin/eslint-config",
   "version": "1.0.0",
   "private": true,
   "description": "Configurations for eslint",
@@ -18,7 +18,7 @@
     "deprecated:typescript": "eslint-find-rules --no-core --deprecated ./typescript.js",
     "deprecated": "npm run deprecated:browser && npm run deprecated:jest && npm run deprecated:node && npm run deprecated:react && npm run deprecated:typescript",
     "test": "npm run unused && npm run deprecated",
-    "ping": "echo \"@environments/eslint-config\""
+    "ping": "echo \"@roschoupkin/eslint-config\""
   },
   "engines": {
     "node": ">=16"

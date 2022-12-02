@@ -3,7 +3,7 @@
 module.exports = {
   root: true,
   extends: [
-    require.resolve('@environments/eslint-config/node'),
-    require.resolve('@environments/eslint-config/prettier'),
+    require.resolve('@roschoupkin/eslint-config/node'),
+    require.resolve('@roschoupkin/eslint-config/prettier'),
   ],
 };

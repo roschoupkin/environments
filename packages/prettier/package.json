@@ -1,10 +1,10 @@
 {
-  "name": "@environments/prettier-config",
+  "name": "@roschoupkin/prettier-config",
   "version": "1.0.0",
   "description": "Config for prettier",
   "main": "index.js",
   "scripts": {
-    "ping": "echo \"@environments/prettier-config\""
+    "ping": "echo \"@roschoupkin/prettier-config\""
   },
   "keywords": [
     "prettier"

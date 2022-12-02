@@ -25,6 +25,7 @@ module.exports = {
     'no-div-regex': 'error',
     'no-else-return': 'error',
     'no-empty-function': ['error', { allow: ['arrowFunctions', 'functions', 'methods'] }],
+    'no-empty-static-block': 'error',
     'no-empty-pattern': 'error',
     'no-eq-null': 'off',
     'no-eval': 'error',
