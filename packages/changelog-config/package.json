@@ -1,11 +1,11 @@
 {
-  "name": "@roschoupkin/changelog-config",
+  "name": "@environments/changelog-config",
   "version": "1.0.0",
   "private": true,
   "description": "Preset for conventional-changelog package",
   "main": "index.js",
   "scripts": {
-    "ping": "echo \"@roschoupkin/changelog-config\""
+    "ping": "echo \"@environments/changelog-config\""
   },
   "engines": {
     "node": ">=16"

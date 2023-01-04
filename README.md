@@ -8,12 +8,12 @@ This project uses itself to validate commit messages, code styles, and can forma
 
 ## Project packages
 
-- [@roschoupkin/eslint-config](packages/eslint) – configuration example for [eslint]
-- [@roschoupkin/prettier-config](packages/prettier) – configuration example for [prettier]
-- [@roschoupkin/changelog-config](packages/changelog) – configuration example for [changelog]
-- [@roschoupkin/typescript-config](packages/typescript) – configuration example for [tsconfig]
-- [@roschoupkin/commitlint-config](packages/commitlint) – configuration example for [commitlint]
-- [@roschoupkin/browserlist-config](packages/browserlist) – configuration example for [browserlist]
+- [@environments/eslint-config](packages/eslint-config) – configuration example for [eslint]
+- [@environments/prettier-config](packages/prettier-config) – configuration example for [prettier]
+- [@environments/changelog-config](packages/changelog-config) – configuration example for [changelog]
+- [@environments/typescript-config](packages/typescript-config) – configuration example for [tsconfig]
+- [@environments/commitlint-config](packages/commitlint-config) – configuration example for [commitlint]
+- [@environments/browserlist-config](packages/browserlist) – configuration example for [browserlist]
 
 ### It is WIP, but you can try to change the code or adding a new package to see the configurations in action.
 

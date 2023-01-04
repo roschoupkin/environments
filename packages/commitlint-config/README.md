@@ -1,4 +1,4 @@
-# @roschoupkin/commitlint-config
+# @environments/commitlint-config
 
 Configuration example for [commitlint].
 

@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-exports': 'error',
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -57,7 +58,10 @@ module.exports = {
             'private-instance-field',
             'public-abstract-field',
             'protected-abstract-field',
-            'private-abstract-field',
+
+            'static-field',
+            'instance-field',
+            'abstract-field',
 
             'public-constructor',
             'protected-constructor',
@@ -71,7 +75,10 @@ module.exports = {
             'private-instance-method',
             'public-abstract-method',
             'protected-abstract-method',
-            'private-abstract-method',
+
+            'static-method',
+            'instance-method',
+            'abstract-method',
           ],
           order: 'as-written',
         },
@@ -151,7 +158,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
-    '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
@@ -166,8 +172,11 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'error',
     '@typescript-eslint/no-unsafe-call': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
     '@typescript-eslint/no-unsafe-return': 'error',
+    '@typescript-eslint/no-unsafe-declaration-merging': 'error',
     '@typescript-eslint/no-var-requires': 'error',
+    '@typescript-eslint/no-useless-empty-export': 'warn',
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'off',
@@ -175,7 +184,17 @@ module.exports = {
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-includes': 'off',
     '@typescript-eslint/prefer-literal-enum-member': 'error',
+    '@typescript-eslint/sort-type-constituents': 'error',
+    '@typescript-eslint/space-before-blocks': 'error',
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
+    '@typescript-eslint/parameter-properties': [
+      'error',
+      {
+        prefer: 'parameter-property',
+        allow: ['private readonly', 'readonly', 'private'],
+      },
+    ],
     '@typescript-eslint/prefer-nullish-coalescing': [
       'error',
       {
@@ -205,7 +224,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/restrict-template-expressions': 'error',
-    '@typescript-eslint/sort-type-union-intersection-members': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': [
@@ -275,7 +293,6 @@ module.exports = {
     '@typescript-eslint/no-dupe-class-members': 'error',
 
     'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': 'off',
 
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': [

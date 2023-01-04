@@ -1,10 +1,10 @@
 {
-  "name": "@roschoupkin/typescript-config",
+  "name": "@environments/typescript-config",
   "version": "1.0.0",
   "description": "Preset and examples for tsconfig",
   "main": "tsconfig.json",
   "scripts": {
-    "ping": "echo \"@roschoupkin/typescript-config\""
+    "ping": "echo \"@environments/typescript-config\""
   },
   "keywords": [
     "tsconfig",

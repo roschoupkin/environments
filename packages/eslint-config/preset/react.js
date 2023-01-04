@@ -97,7 +97,9 @@ module.exports = {
     'react/static-property-placement': ['error', 'static public field'],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
+    'react/iframe-missing-sandbox': 'error',
 
+    'react/jsx-no-leaked-render': ['error', { validStrategies: ['ternary'] }],
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-child-element-spacing': 'error',
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
@@ -169,5 +171,6 @@ module.exports = {
         arrow: true,
       },
     ],
+    'react/hook-use-state': 'error',
   },
 };

@@ -1,11 +1,11 @@
 {
-  "name": "@roschoupkin/commitlint-config",
+  "name": "@environments/commitlint-config",
   "version": "1.0.0",
   "private": true,
   "description": "Config for commitlint",
   "main": "index.js",
   "scripts": {
-    "ping": "echo \"@roschoupkin/commitlint-config\""
+    "ping": "echo \"@environments/commitlint-config\""
   },
   "engines": {
     "node": ">=16"

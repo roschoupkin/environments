@@ -1,11 +1,11 @@
 {
-  "name": "@roschoupkin/browserslist-config",
+  "name": "@environments/browserslist-config",
   "version": "1.0.0",
   "private": true,
   "description": "Config for browserslist",
   "main": "index.js",
   "scripts": {
-    "ping": "echo \"@roschoupkin/browserslist-config\""
+    "ping": "echo \"@environments/browserslist-config\""
   },
   "engines": {
     "node": ">=16"
