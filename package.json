@@ -9,6 +9,7 @@
     "format": "prettier --write .",
     "lint:check": "eslint .",
     "lint": "eslint --fix .",
+    "setup": "setup-environments",
     "prepare": "husky install"
   },
   "workspaces": [

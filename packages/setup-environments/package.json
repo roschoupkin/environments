@@ -1,0 +1,21 @@
+{
+  "name": "@environments/setup-environments",
+  "engines": {
+    "node": ">= 16"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "bin": {
+    "setup-environments": "bin/setup-environments.js"
+  },
+  "dependencies": {
+    "execa": "^6.1.0",
+    "prompt": "^1.3.0",
+    "semver": "^7.3.8"
+  }
+}
