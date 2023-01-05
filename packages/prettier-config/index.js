@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  $schema: 'http://json.schemastore.org/prettierrc',
+  $schema: 'https://json.schemastore.org/prettierrc',
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,

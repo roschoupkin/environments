@@ -1,7 +1,10 @@
 {
-  "extends": "./tsconfig.lib.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "es",
-    "module": "ESNext"
+    "module": "ESNext",
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedModules": true
   }
 }

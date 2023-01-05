@@ -2,13 +2,20 @@
   "name": "@environments/typescript-config",
   "version": "1.0.0",
   "description": "Preset and examples for tsconfig",
-  "main": "tsconfig.json",
+  "main": "tsconfig.base.json",
   "scripts": {
     "ping": "echo \"@environments/typescript-config\""
   },
   "keywords": [
     "tsconfig",
     "typescript"
+  ],
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.es.json",
+    "tsconfig.lib.json",
+    "tsconfig.node.json",
+    "tsconfig.react.json"
   ],
   "author": "d.roschoupkin",
   "license": "UNLICENSED"
