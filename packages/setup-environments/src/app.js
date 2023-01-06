@@ -1,13 +1,13 @@
 'use strict';
 
-const os = require('os');
 const path = require('path');
 const fs = require('fs-extra');
 const chalk = require('chalk');
 
-const hasAbilityToCreateApp = require('./hasAbilityToCreateApp');
+const { stringifyJSON, writeFileSync } = require('./files');
+const { hasAbilityToCreateApp, cleanErrorLogs } = require('./prepare');
 
-function createApp(name) {
+function init(name) {
   const root = path.resolve(name);
   const appName = path.basename(root);
 
@@ -15,18 +15,17 @@ function createApp(name) {
   if (!hasAbilityToCreateApp(root, name)) {
     throw Error(`Can't create an app ${appName} in ${root}`);
   }
+  cleanErrorLogs(root);
 
   console.log(`Creating a new app in ${chalk.green(root)}`);
 
-  const packageJsonTemplate = {
+  const packageJson = stringifyJSON({
     private: true,
     name: appName,
     version: '0.1.0',
-  };
+  });
 
-  const packageJson = JSON.stringify(packageJsonTemplate, null, 2);
-
-  fs.writeFileSync(path.join(root, 'package.json'), packageJson + os.EOL);
+  writeFileSync(root, 'package.json', packageJson);
 
   return {
     root,
@@ -34,4 +33,4 @@ function createApp(name) {
   };
 }
 
-module.exports = createApp;
+module.exports = { init };

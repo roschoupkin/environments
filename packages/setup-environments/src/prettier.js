@@ -1,12 +1,13 @@
 'use strict';
 
 const os = require('os');
-const path = require('path');
-const fs = require('fs-extra');
 
 const prettierConfig = require('@environments/prettier-config');
+const { makeWriteFileSync, stringifyJSON } = require('./files');
 
-const PRETTIER_IGNORE = [
+const PACKAGES = ['prettier'];
+
+const PRETTIER_IGNORE_CONTENT = [
   '# Dependency directories',
   'node_modules/',
   '',
@@ -14,17 +15,14 @@ const PRETTIER_IGNORE = [
   'package-lock.json',
 ].join('\n');
 
-// TODO: Use peerDependencies for install
+function init(root) {
+  const writeFileSync = makeWriteFileSync(root);
 
-function setupPrettier(root) {
-  const config = JSON.stringify(prettierConfig, null, 2);
-
-  fs.writeFileSync(path.join(root, '.prettierrc'), config + os.EOL);
-  fs.writeFileSync(path.join(root, '.prettierignore'), PRETTIER_IGNORE + os.EOL);
-
-  return ['prettier'];
+  writeFileSync('.prettierrc', stringifyJSON(prettierConfig));
+  writeFileSync('.prettierignore', PRETTIER_IGNORE_CONTENT + os.EOL);
 }
 
 module.exports = {
-  setupPrettier,
+  init,
+  packages: PACKAGES,
 };

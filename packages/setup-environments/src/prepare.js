@@ -56,9 +56,7 @@ function hasAbilityToCreateApp(root, name) {
     return false;
   }
 
-  cleanErrorLogs(root);
-
   return true;
 }
 
-module.exports = hasAbilityToCreateApp;
+module.exports = { hasAbilityToCreateApp, cleanErrorLogs };

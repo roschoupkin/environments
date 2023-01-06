@@ -4,10 +4,10 @@ const { Command } = require('commander');
 
 const npm = require('./src/npm');
 const pkg = require('./package.json');
-const createApp = require('./src/createApp');
-const { setupTypescript } = require('./src/typescript');
-const { setupPrettier } = require('./src/prettier');
-const { setupEslint } = require('./src/eslint');
+const app = require('./src/app');
+const typescript = require('./src/typescript');
+const prettier = require('./src/prettier');
+const eslint = require('./src/eslint');
 
 async function init() {
   const program = new Command();
@@ -25,28 +25,36 @@ async function init() {
     .option('--eslint', 'use prettier in application')
     .action(async (name, options) => {
       const original = process.cwd();
-      const { typescript = 0, prettier = 0, eslint = 1, kind } = options;
+      const {
+        typescript: hasTypescript = 0,
+        prettier: hasPrettier = 0,
+        eslint: hasEslint = 0,
+        kind,
+      } = options;
 
       try {
-        const packages = new Set();
+        const packages = [];
 
-        const { root } = createApp(name);
+        const { root } = app.init(name);
 
         process.chdir(root);
 
-        if (typescript) {
-          setupTypescript(root, kind).forEach((p) => packages.add(p));
+        if (hasTypescript) {
+          typescript.init(root, kind);
+          packages.push(...typescript.packages);
         }
 
-        if (prettier) {
-          setupPrettier(root).forEach((p) => packages.add(p));
+        if (hasPrettier) {
+          prettier.init(root);
+          packages.push(...prettier.packages);
         }
 
-        if (eslint) {
-          setupEslint(root).forEach((p) => packages.add(p));
+        if (hasEslint) {
+          eslint.init(root, { hasTypescript, hasPrettier, kind });
+          packages.push(...eslint.packages);
         }
 
-        await npm('i', '-D', ...packages);
+        await npm('i', '-D', ...new Set(packages));
       } catch (error) {
         console.error(error);
 
